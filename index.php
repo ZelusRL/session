@@ -1,4 +1,5 @@
 <?php
+session_start();
 $error = '';
 $page = 'home';
 $access = ["home", "login", "register"];
