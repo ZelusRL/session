@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+img{
+	height: 10%;
+}
+
+/*HEADER*/
+
+.mainTitle{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	padding: 50px;
+	background: #383838;
+	margin-top: 0;
+}
+
+.navi{
+	border-bottom: 10px solid #383838;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.link1{
+	background: #383838;
+	color: #fff;
+	border: 8px;
+}
+
+.link1:hover, .link:hover{
+	color: #383838;
+}
+
+.link{
+	color: #383838;
+}
+
+.btnPseudo{
+	margin-top: 3px;
+}
+
+/*FORM*/
+
+.champs{
+	margin-top: 50px;
+	width: 50%;
+}
+
+.btnSub{
+	margin: 50px 0 30px 60px;
+	background: #383838;
+	color: #fff;
+}
+
+.formu{
+	text-align: center;
+}
