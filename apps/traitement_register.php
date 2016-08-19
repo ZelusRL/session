@@ -14,6 +14,25 @@ if(isset($_POST['username'], $_POST['mdp'], $_POST['mail']))
 	{
 		$error = "Le mot de passe doit comptenir entre 4 et 15 caractères.";
 	}
+	else
+	{
+		$postArray = array(
+			'id'=> uniqid(),
+			'pseudo' => $_POST['username'],
+			'password' => $_POST['mdp'],
+			'email' => $_POST['mail'],
+		);
+		$fileName = 'info_user.json';
+		$file = file_get_contents($fileName);
+		$tab = json_decode($file, true);
+		$tab[] = $postArray;
+		$json = json_encode($tab);
+		file_put_contents($fileName, $json);
+		header('Location: index.php');
+		exit;
+	}
+}
+?>
 
 }
 ?>
