@@ -1,21 +1,21 @@
 <div class="container">	
-	<p class="text-danger"><?=$error?></p>
+	<p class="text-danger error"><?=$error?></p>
 	<form method="post">
 		<div class="input-group champs">
-		  <span class="input-group-addon" id="username">Pseudo</span>
-		  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+		  <span class="input-group-addon">Pseudo</span>
+		  <input type="text" class="form-control" name="username" id="username" placeholder="Username" aria-describedby="sizing-addon2">
 		</div>
 		<div class="input-group champs">
-		  <span class="input-group-addon" id="mdp">Mot de passe</span>
-		  <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+		  <span class="input-group-addon">Mot de passe</span>
+		  <input type="password" class="form-control" name="mdp" id="mdp" placeholder="Password" aria-describedby="sizing-addon2">
 		</div>
 		<div class="input-group champs">
-		  <span class="input-group-addon" id="mdp">Confirmer mot de passe</span>
-		  <input type="password" class="form-control" placeholder="Confirm password" aria-describedby="sizing-addon2">
+		  <span class="input-group-addon">Confirmer mot de passe</span>
+		  <input type="password" class="form-control" name="mdp2" id="mdp2" placeholder="Confirm password" aria-describedby="sizing-addon2">
 		</div>
 		<div class="input-group champs">
-		  <span class="input-group-addon" id="mail">Adresse Mail</span>
-		  <input type="text" class="form-control" placeholder="e-mail" aria-describedby="sizing-addon2">
+		  <span class="input-group-addon">Adresse Mail</span>
+		  <input type="text" class="form-control" name="mail" id="mail" placeholder="e-mail" aria-describedby="sizing-addon2">
 		</div>
 		<button type="submit" class="btn btn-default btnSub">Envoyer</button>
 	</form>
