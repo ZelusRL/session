@@ -33,6 +33,3 @@ if(isset($_POST['username'], $_POST['mdp'], $_POST['mail']))
 	}
 }
 ?>
-
-}
-?>
