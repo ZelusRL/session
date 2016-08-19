@@ -33,7 +33,7 @@ if(isset($_POST['username'], $_POST['mdp'], $_POST['mail']))
 		$tab[] = $postArray;
 		$json = json_encode($tab);
 		file_put_contents($fileName, $json);
-		header('Location: index.php');
+		header('Location: index.php?page=login');
 		exit;
 	}
 }
